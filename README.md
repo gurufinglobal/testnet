@@ -17,29 +17,34 @@ This repository provides resources on Guru testnets
 | **Darwin**     | arm64         |
 | **Darwin**     | x86_64        |
 
-## Gurud Installation Stpes
-**1. Clone Guru codes**
+**Software Dependencies**
+- ca-certificates
+- curl
+- gcc
+- git
+- go (v1.24.6+)
+- make
+- wget
+
+## Gurud Installation
+**Option 1: Clone Codes**
 ```bash
 git clone https://github.com/GPTx-global/guru-v2.git
-```
-
-**2. Checkout to testnet version**
-```bash
 cd guru-v2 && git checkout v2.0.0
-```
-
-**3. Install binary**
-```bash
 make install
-```
-
-**4. Verify binary**
-```bash
 gurud version
 ```
 
-## Download Binary
-If you only want to download the binary, you can download it [here](https://github.com/GPTx-global/guru-v2/releases/tag/v2.0.0).
+**Option 2: Download Binaries**
+Download [here](https://github.com/GPTx-global/guru-v2/releases/tag/v2.0.0).
+If downloaded to `$HOME/Downloads` on Linux:
+```bash
+cd $HOME/Downloads
+mkdir guru-v2
+tar -zxvf ./guru-v2_2.0.0_Linux_amd64.tar.gz -C ./guru-v2/
+sudo mv ./guru-v2/bin/gurud /usr/local/bin/
+gurud version
+```
 
 ## Full-Sync Steps
 **1. Set variables**
