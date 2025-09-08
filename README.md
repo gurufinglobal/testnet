@@ -38,7 +38,6 @@ gurud version
 **Option 2: Download Binaries**
 
 Download [here](https://github.com/GPTx-global/guru-v2/releases/tag/v2.0.0).
-
 If downloaded to `$HOME/Downloads` on Linux:
 ```bash
 cd $HOME/Downloads
