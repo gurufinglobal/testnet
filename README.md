@@ -1,15 +1,11 @@
 # Guru Testnets
 This repository provides resources on Guru testnets
 
+| Types    | Informations                                                                                            |
 |----------|---------------------------------------------------------------------------------------------------------|
 | Chain ID | guru_631-1                                                                                              |
 | Version  | v2.0.0                                                                                                  |
 | Genesis  | [genesis.json](https://guru-testnet.s3.ap-northeast-2.amazonaws.com/genesis_guru_testnet_20250903.json) |
-
-
-<!-- | Chain ID   | Version  | Genesis File                                                                                            | Faucet                       |
-|------------|----------|---------------------------------------------------------------------------------------------------------|------------------------------|
-| guru_631-1 | `v2.0.0` | [genesis.json](https://guru-testnet.s3.ap-northeast-2.amazonaws.com/genesis_guru_testnet_20250903.json) | <https://faucet.gurufin.io/> | -->
 
 ## Requirements
 ### Minimum Hardware
