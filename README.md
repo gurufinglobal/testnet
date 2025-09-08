@@ -38,6 +38,9 @@ make install
 gurud version
 ```
 
+## Download Binary
+If you only want to download the binary, you can download it [here](https://github.com/GPTx-global/guru-v2/releases/tag/v2.0.0).
+
 ## Full-Sync Steps
 **1. Set variables**
 ```bash
@@ -51,16 +54,13 @@ PEERS="d36c5074078b71ea0a3cb53096fd8f1cd0c9da0e@trpc-state1.gurufin.io:26656,fcb
 gurud init $MONIKER --chain-id $CHAIN_ID
 ```
 
-**3. Setup Config**
+**3. Setup config**
 ```bash
-gurud config set client chain-id "$CHAIN_ID"
+gurud config set client chain-id $CHAIN_ID
+gurud config set config moniker $MONIKER --skip-validate
+gurud config set config p2p.persistent_peers $PEERS --skip-validate
+gurud config set config p2p.max_packet_msg_payload_size 10240 --skip-validate
 wget -O $HOME/.gurud/config/genesis.json https://guru-testnet.s3.ap-northeast-2.amazonaws.com/genesis_guru_testnet_20250903.json
-sed -i \
-  -e "s%^moniker *=.*%moniker = \"$MONIKER\"%" \
-  -e "s%^indexer *=.*%indexer = \"null\"%" \
-  -e "s%^persistent_peers *=.*%persistent_peers = \"$PEERS\"%" \
-  -e "s/^max_packet_msg_payload_size = 1024$/max_packet_msg_payload_size = 10240/" \
-  $HOME/.gurud/config/config.toml
 ```
 
 **4. Run node**

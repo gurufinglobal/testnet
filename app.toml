@@ -130,7 +130,7 @@ datadog-hostname = ""
 enable = true
 
 # Swagger defines if swagger documentation should automatically be registered.
-swagger = false
+swagger = true
 
 # Address defines the API server to listen on.
 address = "tcp://0.0.0.0:1317"
@@ -148,7 +148,7 @@ rpc-write-timeout = 0
 rpc-max-body-bytes = 1000000
 
 # EnableUnsafeCORS defines if CORS should be enabled (unsafe - use it at your own risk).
-enabled-unsafe-cors = false
+enabled-unsafe-cors = true
 
 ###############################################################################
 ###                           gRPC Configuration                            ###
@@ -191,10 +191,10 @@ enable = true
 
 # snapshot-interval specifies the block interval at which local state sync snapshots are
 # taken (0 to disable).
-snapshot-interval = 0
+snapshot-interval = 10000
 
 # snapshot-keep-recent specifies the number of recent snapshots to keep and serve (0 to keep all).
-snapshot-keep-recent = 2
+snapshot-keep-recent = 5
 
 ###############################################################################
 ###                              State Streaming                            ###
@@ -265,10 +265,10 @@ evm-chain-id = 631
 enable = true
 
 # Address defines the EVM RPC HTTP server address to bind to.
-address = "127.0.0.1:8545"
+address = "0.0.0.0:8545"
 
 # Address defines the EVM WebSocket server address to bind to.
-ws-address = "127.0.0.1:8546"
+ws-address = "0.0.0.0:8546"
 
 # WSOrigins defines the allowed origins for WebSocket connections.
 # Example: ["localhost", "127.0.0.1", "myapp.example.com"]

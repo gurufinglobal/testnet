@@ -238,7 +238,7 @@
         "base_fee": "630000000000",
         "min_gas_price": "630000000000",
         "min_gas_multiplier": "0.500000000000000000",
-        "min_gas_price_rate": "630000000000"
+        "min_gas_price_rate": "63000000000"
       },
       "block_gas": "0"
     },
@@ -670,7 +670,7 @@
     },
     "staking": {
       "params": {
-        "unbonding_time": "1814400s",
+        "unbonding_time": "86400s",
         "max_validators": 100,
         "max_entries": 7,
         "historical_entries": 10000,

@@ -18,7 +18,7 @@ keyring-default-keyname = ""
 output = "text"
 
 # <host>:<port> to CometBFT RPC interface for this chain
-node = "tcp://localhost:26657"
+node = "tcp://0.0.0.0:26657"
 
 # Transaction broadcasting mode (sync|async)
 broadcast-mode = "sync"
