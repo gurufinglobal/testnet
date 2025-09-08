@@ -18,13 +18,13 @@ This repository provides resources on Guru testnets
 | **Darwin**     | x86_64        |
 
 **Software Dependencies**
-- ca-certificates
-- curl
-- gcc
-- git
-- go (v1.24.6+)
-- make
-- wget
+```bash
+sudo apt update -y
+sudo apt upgrade -y
+sudo apt-get install -y gcc git make wget
+wget -q -O - https://git.io/vQhTU | bash -s -- --version 1.24.6
+source $HOME/.bashrc
+```
 
 ## Gurud Installation
 **Option 1: Clone Project**
@@ -76,6 +76,6 @@ gurud start
 ```
 
 ## Resources
-- **docs**: <https://docs.gurufin.com>
-- **faucet**: <https://faucet.gurufin.io>
-- **explorer**: <https://tscan.gurufin.io>
+- **Docs**: <https://docs.gurufin.com>
+- **Faucet**: <https://faucet.gurufin.io>
+- **Explorer**: <https://tscan.gurufin.io>
