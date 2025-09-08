@@ -69,6 +69,6 @@ gurud start
 ```
 
 ## Resources
-- **docs**: <https://docs.gurufin.com/>
-- **faucet**: <https://faucet.gurufin.io/>
-- **explorer**: <https://tscan.gurufin.io/>
+- **docs**: <https://docs.gurufin.com>
+- **faucet**: <https://faucet.gurufin.io>
+- **explorer**: <https://tscan.gurufin.io>
