@@ -30,7 +30,8 @@ This repository provides resources on Guru testnets
 **Option 1: Clone Codes**
 ```bash
 git clone https://github.com/GPTx-global/guru-v2.git
-cd guru-v2 && git checkout v2.0.0
+cd guru-v2
+git checkout v2.0.0
 make install
 gurud version
 ```
