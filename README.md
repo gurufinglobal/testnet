@@ -27,26 +27,26 @@ This repository provides resources on Guru testnets
 - wget
 
 ## Gurud Installation
-**Option 1: Clone Codes**
+**Option 1: Clone Project**
 ```bash
 git clone https://github.com/GPTx-global/guru-v2.git
 cd guru-v2
 git checkout v2.0.0
 make install
-gurud version
 ```
 
-**Option 2: Download Binaries**
+**Option 2: Download Binary**
 
 Download [here](https://github.com/GPTx-global/guru-v2/releases/tag/v2.0.0).
-If downloaded to `$HOME/Downloads` on Linux:
+Downloaded to `$HOME/Downloads` on Linux:
 ```bash
 cd $HOME/Downloads
-mkdir guru-v2
+mkdir -p guru-v2
 tar -zxvf ./guru-v2_2.0.0_Linux_amd64.tar.gz -C ./guru-v2/
 sudo mv ./guru-v2/bin/gurud /usr/local/bin/
-gurud version
 ```
+
+>After installation, if enter the `gurud version` command, the version should be displayed.
 
 ## Full-Sync Steps
 **1. Set variables**
