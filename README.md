@@ -31,13 +31,13 @@ source $HOME/.bashrc
 ```bash
 git clone https://github.com/GPTx-global/guru-v2.git
 cd guru-v2
-git checkout v2.0.0
+git checkout v2.0.1
 make install
 ```
 
 **Option 2: Download Binary**
 
-Download [here](https://github.com/GPTx-global/guru-v2/releases/tag/v2.0.0).
+Download [here](https://github.com/GPTx-global/guru-v2/releases/tag/v2.0.1).
 Downloaded to `$HOME/Downloads` on Linux:
 ```bash
 cd $HOME/Downloads

@@ -166,9 +166,9 @@
       "delegator_starting_infos": [],
       "validator_slash_events": [],
       "ratio": {
-        "staking_rewards": "0.666666666666666667",
+        "staking_rewards": "0.9",
         "base": "0",
-        "burn": "0.333333333333333333"
+        "burn": "0.1"
       },
       "base_address": "guru1367kc8hmhft9mnxrj9lryj77wtx48l34gf905n",
       "moderator_address": "guru1367kc8hmhft9mnxrj9lryj77wtx48l34gf905n"
@@ -630,16 +630,16 @@
     },
     "mint": {
       "minter": {
-        "inflation": "0.000000000000000000",
+        "inflation": "0.170000000000000000",
         "annual_provisions": "0.000000000000000000"
       },
       "params": {
         "mint_denom": "agxn",
         "inflation_rate_change": "0.000000000000000000",
-        "inflation_max": "0.000000000000000000",
-        "inflation_min": "0.000000000000000000",
+        "inflation_max": "0.170000000000000000",
+        "inflation_min": "0.170000000000000000",
         "goal_bonded": "0.670000000000000000",
-        "blocks_per_year": "6311520"
+        "blocks_per_year": "12614400"
       }
     },
     "oracle": {
