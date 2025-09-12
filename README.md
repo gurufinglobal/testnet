@@ -42,7 +42,7 @@ Downloaded to `$HOME/Downloads` on Linux:
 ```bash
 cd $HOME/Downloads
 mkdir -p guru-v2
-tar -zxvf ./guru-v2_2.0.0_Linux_amd64.tar.gz -C ./guru-v2/
+tar -zxvf ./guru-v2_2.0.1_Linux_amd64.tar.gz -C ./guru-v2/
 sudo mv ./guru-v2/bin/gurud /usr/local/bin/
 ```
 
