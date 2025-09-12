@@ -67,7 +67,7 @@ gurud config set client chain-id $CHAIN_ID
 gurud config set config moniker $MONIKER --skip-validate
 gurud config set config p2p.persistent_peers $PEERS --skip-validate
 gurud config set config p2p.max_packet_msg_payload_size 10240 --skip-validate
-wget -O $HOME/.gurud/config/genesis.json https://guru-testnet.s3.ap-northeast-2.amazonaws.com/genesis_guru_testnet_20250903.json
+wget -O $HOME/.gurud/config/genesis.json https://raw.githubusercontent.com/GPTx-global/testnet/refs/heads/main/genesis.json
 ```
 
 **4. Run node**
