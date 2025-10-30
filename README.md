@@ -26,14 +26,14 @@ sudo apt-get install -y wget
 
 ## Gurud Installation
 
-Check binary download url: [here](https://github.com/GPTx-global/guru-v2/releases/tag/v2.0.1).
+Check binary download url: [here](https://github.com/gurufinglobal/guru/releases/tag/v2.0.1).
 
 ```bash
 # example for amd64 Linux
-wget https://github.com/GPTx-global/guru-v2/releases/download/v2.0.1/guru-v2_2.0.1_Linux_amd64.tar.gz
-mkdir -p guru-v2
-tar -zxvf ./guru-v2_2.0.1_Linux_amd64.tar.gz -C ./guru-v2/
-sudo mv ./guru-v2/bin/gurud /usr/local/bin/
+wget https://github.com/gurufinglobal/guru/releases/download/v2.0.1/guru-v2_2.0.1_Linux_amd64.tar.gz
+mkdir -p guru
+tar -zxvf ./guru-v2_2.0.1_Linux_amd64.tar.gz -C ./guru/
+sudo mv ./guru/bin/gurud /usr/local/bin/
 ```
 
 >After installation, if enter the `gurud version` command, the version should be displayed.
@@ -57,7 +57,7 @@ gurud config set client chain-id $CHAIN_ID
 gurud config set config moniker $MONIKER --skip-validate
 gurud config set config p2p.persistent_peers $PEERS --skip-validate
 gurud config set config p2p.max_packet_msg_payload_size 10240 --skip-validate
-wget -O $HOME/.gurud/config/genesis.json https://raw.githubusercontent.com/GPTx-global/testnet/refs/heads/main/genesis.json
+wget -O $HOME/.gurud/config/genesis.json https://raw.githubusercontent.com/gurufinglobal/testnet/refs/heads/main/genesis.json
 ```
 
 **Step 4. Run node**
